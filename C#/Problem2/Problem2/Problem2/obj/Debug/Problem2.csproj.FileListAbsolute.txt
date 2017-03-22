@@ -1,0 +1,5 @@
+C:\Users\moonoy13\Documents\Euler\C#\Problem2\Problem2\Problem2\bin\Debug\Problem2.exe.config
+C:\Users\moonoy13\Documents\Euler\C#\Problem2\Problem2\Problem2\bin\Debug\Problem2.exe
+C:\Users\moonoy13\Documents\Euler\C#\Problem2\Problem2\Problem2\bin\Debug\Problem2.pdb
+C:\Users\moonoy13\Documents\Euler\C#\Problem2\Problem2\Problem2\obj\Debug\Problem2.exe
+C:\Users\moonoy13\Documents\Euler\C#\Problem2\Problem2\Problem2\obj\Debug\Problem2.pdb

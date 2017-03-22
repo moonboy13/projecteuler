@@ -1,0 +1,6 @@
+C:\Users\moonoy13\Documents\Euler\C#\Problem1\Problem1\Problem1\bin\Debug\Problem1.exe.config
+C:\Users\moonoy13\Documents\Euler\C#\Problem1\Problem1\Problem1\bin\Debug\Problem1.exe
+C:\Users\moonoy13\Documents\Euler\C#\Problem1\Problem1\Problem1\bin\Debug\Problem1.pdb
+C:\Users\moonoy13\Documents\Euler\C#\Problem1\Problem1\Problem1\obj\Debug\Problem1.csprojResolveAssemblyReference.cache
+C:\Users\moonoy13\Documents\Euler\C#\Problem1\Problem1\Problem1\obj\Debug\Problem1.exe
+C:\Users\moonoy13\Documents\Euler\C#\Problem1\Problem1\Problem1\obj\Debug\Problem1.pdb
