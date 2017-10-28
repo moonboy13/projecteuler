@@ -1,0 +1,42 @@
+﻿Build started 4/2/2016 1:09:36 PM.
+     1>Project "C:\Users\moonoy13\Documents\Euler\cpp\problem4\problem4\problem4\problem4.vcxproj" on node 2 (Build target(s)).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\CL.exe /c /AI"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\\" /AI"C:\Program Files (x86)\Windows Kits\8.1\References\CommonConfiguration\Neutral" /AI"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\Facades\\" /Zi /clr /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _UNICODE /D UNICODE /EHa /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Yc"stdafx.h" /Fp"Debug\problem4.pch" /Fo"Debug\\" /Fd"Debug\vc140.pdb" /TP /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\mscorlib.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\System.Data.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\System.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\System.Xml.dll" /analyze- /errorReport:prompt /clr:nostdlib stdafx.cpp
+         stdafx.cpp
+         C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\CL.exe /c /AI"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\\" /AI"C:\Program Files (x86)\Windows Kits\8.1\References\CommonConfiguration\Neutral" /AI"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\Facades\\" /Zi /clr /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _UNICODE /D UNICODE /EHa /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Yu"stdafx.h" /Fp"Debug\problem4.pch" /Fo"Debug\\" /Fd"Debug\vc140.pdb" /TP /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\mscorlib.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\System.Data.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\System.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\System.Xml.dll" /analyze- /errorReport:prompt /clr:nostdlib AssemblyInfo.cpp problem4.cpp
+         AssemblyInfo.cpp
+         problem4.cpp
+     1>problem4.cpp(2): warning C4627: '#include <string>': skipped when looking for precompiled header use
+         problem4.cpp(2): note: Add directive to 'stdafx.h' or rebuild precompiled header
+     1>problem4.cpp(3): warning C4627: '#include <iostream>': skipped when looking for precompiled header use
+         problem4.cpp(3): note: Add directive to 'stdafx.h' or rebuild precompiled header
+     1>problem4.cpp(9): error C2039: 'string': is not a member of 'std'
+         predefined C++ types (compiler internal)(208): note: see declaration of 'std'
+     1>problem4.cpp(9): error C2065: 'string': undeclared identifier
+     1>problem4.cpp(9): error C2146: syntax error: missing ';' before identifier 'pi'
+     1>problem4.cpp(9): error C2065: 'pi': undeclared identifier
+     1>problem4.cpp(9): error C2039: 'to_string': is not a member of 'std'
+         predefined C++ types (compiler internal)(208): note: see declaration of 'std'
+     1>problem4.cpp(9): error C3861: 'to_string': identifier not found
+     1>problem4.cpp(10): error C2039: 'string': is not a member of 'std'
+         predefined C++ types (compiler internal)(208): note: see declaration of 'std'
+     1>problem4.cpp(10): error C2065: 'string': undeclared identifier
+     1>problem4.cpp(10): error C2146: syntax error: missing ';' before identifier 'perfect'
+     1>problem4.cpp(10): error C2065: 'perfect': undeclared identifier
+     1>problem4.cpp(10): error C2039: 'to_string': is not a member of 'std'
+         predefined C++ types (compiler internal)(208): note: see declaration of 'std'
+     1>problem4.cpp(10): error C3861: 'to_string': identifier not found
+     1>problem4.cpp(11): error C2039: 'cout': is not a member of 'std'
+         predefined C++ types (compiler internal)(208): note: see declaration of 'std'
+     1>problem4.cpp(11): error C2065: 'cout': undeclared identifier
+     1>problem4.cpp(11): error C2065: 'pi': undeclared identifier
+     1>problem4.cpp(12): error C2039: 'cout': is not a member of 'std'
+         predefined C++ types (compiler internal)(208): note: see declaration of 'std'
+     1>problem4.cpp(12): error C2065: 'cout': undeclared identifier
+     1>problem4.cpp(12): error C2065: 'perfect': undeclared identifier
+         Generating Code...
+     1>Done Building Project "C:\Users\moonoy13\Documents\Euler\cpp\problem4\problem4\problem4\problem4.vcxproj" (Build target(s)) -- FAILED.
+
+Build FAILED.
+
+Time Elapsed 00:00:06.51

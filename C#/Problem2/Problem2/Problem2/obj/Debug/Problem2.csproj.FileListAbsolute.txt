@@ -3,3 +3,10 @@ C:\Users\moonoy13\Documents\Euler\C#\Problem2\Problem2\Problem2\bin\Debug\Proble
 C:\Users\moonoy13\Documents\Euler\C#\Problem2\Problem2\Problem2\bin\Debug\Problem2.pdb
 C:\Users\moonoy13\Documents\Euler\C#\Problem2\Problem2\Problem2\obj\Debug\Problem2.exe
 C:\Users\moonoy13\Documents\Euler\C#\Problem2\Problem2\Problem2\obj\Debug\Problem2.pdb
+C:\Users\moonboy13\source\repos\projecteuler\C#\Problem2\Problem2\Problem2\bin\Debug\Problem2.exe.config
+C:\Users\moonboy13\source\repos\projecteuler\C#\Problem2\Problem2\Problem2\bin\Debug\Problem2.exe
+C:\Users\moonboy13\source\repos\projecteuler\C#\Problem2\Problem2\Problem2\bin\Debug\Problem2.pdb
+C:\Users\moonboy13\source\repos\projecteuler\C#\Problem2\Problem2\Problem2\obj\Debug\Problem2.csprojResolveAssemblyReference.cache
+C:\Users\moonboy13\source\repos\projecteuler\C#\Problem2\Problem2\Problem2\obj\Debug\Problem2.csproj.CoreCompileInputs.cache
+C:\Users\moonboy13\source\repos\projecteuler\C#\Problem2\Problem2\Problem2\obj\Debug\Problem2.exe
+C:\Users\moonboy13\source\repos\projecteuler\C#\Problem2\Problem2\Problem2\obj\Debug\Problem2.pdb
