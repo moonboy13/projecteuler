@@ -20,23 +20,69 @@ How many Sundays fell on the first of the month during the twentieth century (1 
 
 namespace Problem19
 {
-	public class Program
+	class Program
 	{
-		protected enum DaysOfWeek
+		//-- I realize everything being static is bad.
+		private static List<int> thirtyOneDays = new List<int>()
 		{
-			Sunday, Monday, Tuesday, Wednesday, Thursday, Friday, Saturday
-		}
+			0, 2, 4, 6, 7, 9, 11
+		};
 
-		public bool IsLeapYear(int year) => ((year % 4 == 0) && (year % 100 != 0 || year % 400 == 0));
+		private static List<int> thirtyDays = new List<int>()
+		{
+			3, 5, 8, 10
+		};
+
+		private static bool IsLeapYear(int year) => ((year % 4 == 0) && (year % 100 != 0 || year % 400 == 0));
+
+		private static void AdvanceStartDay(int month, int year, ref DayOfWeek day)
+		{
+			if(thirtyOneDays.Contains(month))
+			{
+				day += 3;
+			}
+			else if(thirtyDays.Contains(month))
+			{
+				day += 2;
+			}
+			else
+			{
+				if(IsLeapYear(year))
+				{
+					day++;
+				}
+			}
+
+			if(day > DayOfWeek.Saturday)
+			{
+				day -= 7;
+			}
+		}
 
 		static void Main(string[] args)
 		{
 			//-- Determine inital positions
+			int count = 0, year = 1900;
+			DayOfWeek start = DayOfWeek.Monday;
 
-			int count = 0;
-			int initYear = 1900;
+			while(year < 2001)
+			{
+				int month = 0;
+				while (month < 12)
+				{
+					Console.WriteLine("Year: " + year.ToString() + " Month: " + month.ToString() + " Mine: " + start.ToString() + " NET: " + new DateTime(year, (month + 1), 1).DayOfWeek.ToString());
+					if (start == DayOfWeek.Sunday)
+					{
+						count++;
+					}
 
-			//-- Loop over months, do-while style
+					AdvanceStartDay(month, year, ref start);
+					month++;
+				}
+				year++;
+			}
+
+			Console.WriteLine(count);
 		}
 	}
 }

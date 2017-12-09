@@ -34,3 +34,4 @@
 # Compliation directories
 **/bin
 **/obj
+/C#/Problem1/Problem1/packages
