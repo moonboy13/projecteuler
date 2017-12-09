@@ -20,10 +20,23 @@ How many Sundays fell on the first of the month during the twentieth century (1 
 
 namespace Problem19
 {
-	class Program
+	public class Program
 	{
+		protected enum DaysOfWeek
+		{
+			Sunday, Monday, Tuesday, Wednesday, Thursday, Friday, Saturday
+		}
+
+		public bool IsLeapYear(int year) => ((year % 4 == 0) && (year % 100 != 0 || year % 400 == 0));
+
 		static void Main(string[] args)
 		{
+			//-- Determine inital positions
+
+			int count = 0;
+			int initYear = 1900;
+
+			//-- Loop over months, do-while style
 		}
 	}
 }
