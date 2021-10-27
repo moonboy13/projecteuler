@@ -35,3 +35,10 @@
 **/bin
 **/obj
 /C#/Problem1/Problem1/packages
+/.vs/projecteuler/v17/.suo
+/C#/Problem1/Problem1/.vs/ProjectEuler/v17
+/C#/Problem1/Problem1/upgrade-assistant.clef
+/C#/Problem1/Problem1.backup/Problem1/upgrade.backup
+/C#/Problem1/Problem1.backup
+
+**/.vs
