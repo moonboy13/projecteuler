@@ -1,8 +1,16 @@
-﻿// See https://aka.ms/new-console-template for more information
-using System.Text;
+﻿using System.Text;
+
+/*
+ * If the numbers 1 to 5 are written out in words: one, two, three, four, five, then there are 3 + 3 + 5 + 4 + 4 = 19 letters used in total.
+
+If all the numbers from 1 to 1000 (one thousand) inclusive were written out in words, how many letters would be used?
+
+
+NOTE: Do not count spaces or hyphens. For example, 342 (three hundred and forty-two) contains 23 letters and 115 (one hundred and fifteen) contains 20 letters. The use of "and" when writing out numbers is in compliance with British usage.
+ */
 
 int total = 0;
-foreach(var num in Enumerable.Range(1, 1000))
+foreach (var num in Enumerable.Range(1, 1000))
 {
     total += GetNumberStringLetterCount(num);
 }
@@ -29,7 +37,7 @@ static string GetOnesString(int number) => number switch
 static string GetTensString(int number)
 {
     string retVal = string.Empty;
-    if(number < 20)
+    if (number < 20)
     {
         retVal = number switch
         {
@@ -61,7 +69,7 @@ static string GetTensString(int number)
             9 => string.Join("", "ninety", GetOnesString(remainder)),
             _ => throw new ArgumentException("This method only accepts [10, 99]", nameof(number))
         };
-        if(remainder == 0)
+        if (remainder == 0)
         {
             retVal = retVal.TrimEnd('-');
         }
@@ -78,21 +86,21 @@ static int GetNumberStringLetterCount(int number)
     int hundreds = (number % 1000) / 100;
     int tens = (number % 100);
 
-    if(thousands > 0 )
+    if (thousands > 0)
     {
         ret.Append(GetOnesString(thousands) + "thousand");
     }
 
-    if( hundreds > 0 )
+    if (hundreds > 0)
     {
         ret.Append(GetOnesString(hundreds) + "hundred");
-        if(tens > 0)
+        if (tens > 0)
         {
             ret.Append("and");
         }
     }
 
-    if( tens > 9 )
+    if (tens > 9)
     {
         ret.Append(GetTensString(tens));
     }
