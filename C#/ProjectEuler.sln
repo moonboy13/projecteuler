@@ -9,7 +9,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Problem18", "Problem18\Prob
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Problem19", "Problem19\Problem19\Problem19.csproj", "{7522D616-3E8C-48A8-A738-A07880B57FDE}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConsoleApp1", "Problem17\ConsoleApp1\ConsoleApp1.csproj", "{770955A0-007D-4C2D-AF5A-63EA9A0EBD3A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Problem17", "Problem17\ConsoleApp1\Problem17.csproj", "{770955A0-007D-4C2D-AF5A-63EA9A0EBD3A}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Problem1", "Problem1\Problem1\Problem1\Problem1.csproj", "{7565B6BB-207C-4C91-912C-D3F909D8C20F}"
 EndProject
