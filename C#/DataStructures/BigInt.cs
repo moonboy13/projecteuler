@@ -36,6 +36,11 @@ namespace DataStructures
             }
         }
 
+        public int Count
+        { 
+            get { return _digits.Count; } 
+        }
+
         /// <summary>
         /// Private constructor to ensure that the factory methods are used.
         /// </summary>
@@ -243,9 +248,19 @@ namespace DataStructures
             return finalValue;
         }
 
+        public static BigInt operator *(BigInt left, int right)
+        {
+            return left * FromInt(right);
+        }
+
+        public static BigInt operator *(int left, BigInt right)
+        {
+            return FromInt(left) * right;
+        }
+
     #endregion
 
-    private void AppendDigit(int x)
+        private void AppendDigit(int x)
         {
             _digits.Add(x);
         }
