@@ -20,10 +20,10 @@
             {
                 if(!m_AmicableNumbers.Contains(i))
                 {
-                    int x = SumDivisors(i);
+                    int x = i.FindDivisors().Sum();
                     if (i != x)
                     {
-                        int y = SumDivisors(x);
+                        int y = x.FindDivisors().Sum();
                         if(y == i)
                         {
                             m_AmicableNumbers.Add(i);
@@ -35,36 +35,6 @@
             }
 
             return m_AmicableNumbers.Sum();
-        }
-
-
-        private static int SumDivisors(int n)
-        {
-            int result = 1;
-            int step = 1;
-            int max = (int)Math.Sqrt(n);
-
-            // If the number is not even we can skip all even numbers
-            if(n % 2 > 0)
-            {
-                step++;
-            }
-            else
-            {
-                result += 2;
-                result += (n / 2);
-            }
-
-            for(int i = 3; i< max; i += step)
-            {
-                if(n % i == 0)
-                {
-                    result += i;
-                    result += (n / i);
-                }
-            }
-
-            return result;
         }
     }
 }
