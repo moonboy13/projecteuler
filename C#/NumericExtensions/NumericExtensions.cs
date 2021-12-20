@@ -2,11 +2,16 @@
 {
     public static class NumericExtensions
     {
-        public static List<int> FindDivisors(this int n)
+        public static HashSet<int> FindDivisors(this int n)
         {
             int step = 1;
             int max = (int)Math.Sqrt(n);
-            List<int> divisors = new List<int>() { 1 };
+            HashSet<int> divisors = new HashSet<int>() { 1 };
+
+            if(n <= 2)
+            {
+                return divisors;
+            }
 
             // If not even then we can skip all even numbers
             if (n % 2 > 0)
@@ -19,7 +24,7 @@
                 divisors.Add(n / 2);
             }
 
-            for(int i = 3; i < max; i++)
+            for(int i = 3; i <= max; i++)
             {
                 if(n % i == 0)
                 {

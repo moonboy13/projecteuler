@@ -17,5 +17,45 @@ namespace Solutions
     /// </summary>
     public class Problem23
     {
+        private const int MAX = 28123;
+        private List<int> _abundantNumbers = new();
+        private HashSet<int> _abundantSums = new();
+        private object _lock = new object();
+
+        public static int Solve()
+        {
+            return new Problem23().InnerSolve();
+        }
+
+        private int InnerSolve()
+        {
+            var foo = Enumerable.Range(1, MAX);
+            var m = foo.Max();
+            int total = foo.Sum();
+
+            for(int i = 1; i < MAX; i++)
+            {
+                if(i.FindDivisors().Sum() > i)
+                {
+                    _abundantNumbers.Add(i);
+
+                    Parallel.ForEach(_abundantNumbers, (num) =>
+                    {
+                        int sum = num + i;
+
+                        if (sum <= MAX)
+                        {
+                            lock (_lock)
+                            {
+                                _abundantSums.Add(sum);
+                            }
+                        }
+                    });
+                }
+            }
+
+            return total - _abundantSums.Sum();
+        }
+
     }
 }
