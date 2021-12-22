@@ -56,5 +56,12 @@ namespace Extentions.Tests
 
             Assert.AreEqual(expectedDivisors.Sum(), actualDivisors.Sum());
         }
+
+        [TestMethod()]
+        public void FactorialTest()
+        {
+            uint test = 3;
+            Assert.AreEqual((uint)6, test.Factorial());
+        }
     }
 }

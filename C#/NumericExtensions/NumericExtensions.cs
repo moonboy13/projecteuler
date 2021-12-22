@@ -35,5 +35,16 @@
 
             return divisors;
         }
+
+        public static uint Factorial(this uint n)
+        {
+            uint factorial = 1;
+            while (n > 0)
+            {
+                factorial *= n--;
+            }
+
+            return factorial;
+        }
     }
 }
