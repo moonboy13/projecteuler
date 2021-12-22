@@ -31,7 +31,6 @@ namespace Solutions
     /// </summary>
     public class Problem25
     {
-        // TODO: Of type T here where T is some sort of integer common denominator is best.
         public static BigInteger Solve(int nDigits)
         {
             BigInteger divisor = BigInteger.Pow(10, --nDigits);
