@@ -1,4 +1,9 @@
 ﻿// See https://aka.ms/new-console-template for more information
 using Solutions;
 
-Console.WriteLine(Problem25.Solve(1000));
+var answerList = Problem26.GetDecimals(10);
+
+foreach(var elem in answerList)
+{
+    Console.WriteLine(elem);
+}
