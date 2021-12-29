@@ -27,40 +27,56 @@ namespace Solutions
         // General algo is to divide by digit to get current position then multilpy remainder by 10 and move one place lower
         // in the decimal. Need to figure out a way to detect a cycle.
 
-        public static List<decimal> GetDecimals(int maxDenominator)
+        public static int Solve(int maxDenominator)
         {
-            if(maxDenominator <= 0)
+            if (maxDenominator <= 0)
             {
                 throw new ArgumentException("Cannot work with a negative denominator", nameof(maxDenominator));
             }
 
-            List<decimal> result = new(maxDenominator);
+            int maxCycleLength = 0;
+            int index = 0;
             Problem26 reference = new();
 
-            for(int i = 2; i <= maxDenominator; i++)
+            for (int i = 2; i <= maxDenominator; i++)
             {
-                result.Add(reference.FractionToDecimal(1, i));
+                int checkVal = reference.FindCycleLength(1, i);
+                if(checkVal > maxCycleLength)
+                {
+                    index = i;
+                    maxCycleLength = checkVal;
+                }
             }
 
-            return result;
+            return index;
         }
 
-        private decimal FractionToDecimal(int numerator, int denominator)
+        private int FindCycleLength(int numerator, int denominator)
         {
             decimal answer = 0m, multiplier = 1m;
             int remainder = numerator;
             int breaker = 0;
 
-            do
+            // Track a list of remainder values, if the same remainder appears we have a cycle
+            List<int> seenRemainders = new();
+
+            while(remainder > 0 && !seenRemainders.Contains(remainder) && breaker++ < 2000)
             {
+                seenRemainders.Add(remainder);
                 answer += (remainder / denominator) * multiplier;
                 remainder %= denominator;
+
+
+
                 remainder *= 10;
                 multiplier /= 10m;
             }
-            while (remainder > 0 && breaker++ < 20);
 
-            return answer;
+            int cycleLength = remainder > 0 ? seenRemainders.Count - seenRemainders.IndexOf(remainder) : 0;
+
+            //Console.WriteLine($"Fraction: {numerator}/{denominator}\tDecimal: {answer}\tCycleLength:{cycleLength}");
+
+            return cycleLength;
         }
     }
 }
