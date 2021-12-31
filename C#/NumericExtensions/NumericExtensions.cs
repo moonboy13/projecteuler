@@ -4,6 +4,11 @@
     {
         public static HashSet<int> FindDivisors(this int n)
         {
+            if(n == 0)
+            {
+                return new HashSet<int>();
+            }
+
             int step = 1;
             int max = (int)Math.Sqrt(n);
             HashSet<int> divisors = new HashSet<int>() { 1 };
@@ -45,6 +50,11 @@
             }
 
             return factorial;
+        }
+
+        public static bool IsPrime(this int n)
+        {
+            return (n.FindDivisors()?.Count ?? 0) == 1;
         }
     }
 }
