@@ -67,6 +67,15 @@ namespace DataStructures
             return retVal;
         }
 
+        //public static BigInt Pow(BigInt baseVal, BigInt exponent)
+        //{
+        //    BigInt result = baseVal;
+        //    while(exponent > 1)
+        //    {
+
+        //    }
+        //}
+
         /// <summary>
         /// Culture sensitive to-string representation of the number
         /// </summary>
@@ -258,7 +267,12 @@ namespace DataStructures
             return FromInt(left) * right;
         }
 
-    #endregion
+        //public static bool operator >(BigInt left, int right)
+        //{
+        //    return (left + -1 * FromInt(right)) > 0;
+        //}
+
+        #endregion
 
         private void AppendDigit(int x)
         {

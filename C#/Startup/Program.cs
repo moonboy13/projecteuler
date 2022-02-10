@@ -1,4 +1,4 @@
 ﻿// See https://aka.ms/new-console-template for more information
 using Solutions;
 
-Console.WriteLine(Problem28.Solve(1001));
+Console.WriteLine(Problem29.Solve(2, 100, 2, 100));
