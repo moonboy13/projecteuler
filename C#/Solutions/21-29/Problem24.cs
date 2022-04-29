@@ -59,10 +59,7 @@ namespace Solutions
                 if(totalCombos <= _combosToTry)
                 {
                     _combosToTry -= totalCombos;
-                    int swapPosition = (_digitPosition + counter);
-                    int temp = _digits[_digitPosition];
-                    _digits[_digitPosition] = _digits[swapPosition];
-                    _digits[swapPosition] = temp;
+                    _digits.Swap(_digitPosition, (_digitPosition + counter));
                     counter++;
                 }
                 else
