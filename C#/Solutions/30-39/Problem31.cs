@@ -18,4 +18,15 @@ namespace Solutions
 
 
     }
+
+    enum CoinType {
+        OnePence,
+        TwoPence,
+        FivePence,
+        TenPence,
+        TwentyPence,
+        FiftyPence,
+        OnePound,
+        TwoPound
+    }
 }
