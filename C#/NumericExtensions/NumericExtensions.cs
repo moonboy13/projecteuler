@@ -56,5 +56,14 @@
         {
             return (n.FindDivisors()?.Count ?? 0) == 1;
         }
+
+        public static int RotateRight(this int num)
+        {
+            List<char> digits = num.ToString().ToCharArray().ToList();
+            char tmp = digits[digits.Count-1];
+            digits.RemoveAt(digits.Count-1);
+            digits.Insert(0, tmp);
+            return int.Parse(string.Join("", digits));
+        }
     }
 }

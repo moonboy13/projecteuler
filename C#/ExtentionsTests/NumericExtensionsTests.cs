@@ -63,5 +63,15 @@ namespace Extentions.Tests
             uint test = 3;
             Assert.AreEqual((uint)6, test.Factorial());
         }
+
+        [TestMethod()]
+        public void RotateRightTest()
+        {
+            int test = 197;
+            test = test.RotateRight();
+            Assert.AreEqual(719, test);
+            test = test.RotateRight();
+            Assert.AreEqual(971, test);
+        }
     }
 }
