@@ -7,7 +7,10 @@ namespace Solutions;
 *
 * Plan:
 * - Refactor the RotateRight method from Problem32 into an extension function for integers.
-* - Pair this with the 
+* - Pair this with the IsPrime method.
+* ToDo:
+* - Fix the problem noted below.
+* - Need to answer whether 197, 971, and 719 count as 1 or 3? Algorithm below says 3.
 **/
 public static class Problem35 {
     public static int Solve(int limit){
